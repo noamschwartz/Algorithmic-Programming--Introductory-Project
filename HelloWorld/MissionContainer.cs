@@ -30,6 +30,7 @@ namespace Excercise_1
          
             }
         }
+        //this will return all of the function names.
         public List<string> getAllMissions()
         {
             List<String> missionNames = new List<string>();
