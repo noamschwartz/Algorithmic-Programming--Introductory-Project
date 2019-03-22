@@ -14,7 +14,11 @@ namespace Excercise_1
 
         public string Type { get; }
 
-        
+        /// <Constructor>
+        /// thisis the class constructor.
+        /// </summary>
+        /// <param name="func"></param> the function algorithm given as a single mission.
+        /// <param name="name"></param> the name of the function
         public SingleMission(Func func,string name)
         {
             this.Name = name;
@@ -23,7 +27,11 @@ namespace Excercise_1
 
         }
  
-
+        /// <summary>
+        /// This calculates the functions result and returns it
+        /// </summary>
+        /// <param name="value"></patram> the value given as a parameter that sould be calculated.
+        /// <returns></returns> the result of the functions calculation.
         public double Calculate(double value)
         {
             double newVal = Function(value);

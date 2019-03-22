@@ -15,7 +15,10 @@ namespace Excercise_1
                 Console.WriteLine($"{m.Name}({val}) = {m.Calculate(val)}\n");
             }
         }
-
+        /// <summary>
+        /// this will print all of the available functions in a mission.
+        /// </summary>
+        /// <param name="container"></param>the container that holds all of the missions.
         public static void PrintAvailableFunctions(FunctionsContainer container)
         {
             var fuctionListNames = container.getAllMissions();
@@ -26,6 +29,10 @@ namespace Excercise_1
             }
             Console.WriteLine("####################################\n");
         }
+        /// <summary>
+        /// this is the main function of the program.
+        /// </summary>
+        /// <param name="args"></param> the parameters given to the main function.
         public static void Main(string[] args)
         {
             FunctionsContainer funcList = new FunctionsContainer();     // Creating the mission conatiner
@@ -63,7 +70,7 @@ namespace Excercise_1
                 } while (val > 2);
                 Console.WriteLine("----------------------------------------");
             };
-
+            //builing different missions
             ComposedMission mission1 = new ComposedMission("mission1")
                 .Add(funcList["Square"])
                 .Add(funcList["Sqrt"]);
