@@ -33,6 +33,7 @@ namespace Excercise_1
         public List<string> getAllMissions()
         {
             List<String> missionNames = new List<string>();
+            //add the keys of the function to a list.
             foreach(var item in funcDic.Keys)
             {
                 missionNames.Add(item);
