@@ -26,8 +26,8 @@ namespace Excercise_1
             Type = "Single";
 
         }
- 
-        /// <summary>
+
+        /// <Calculate>
         /// This calculates the functions result and returns it
         /// </summary>
         /// <param name="value"></patram> the value given as a parameter that sould be calculated.

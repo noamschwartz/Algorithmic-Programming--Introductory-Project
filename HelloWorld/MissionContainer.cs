@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Excercise_1
 {
     public delegate double Func(double val);
-    /// <summary>
+    /// <FunctionsContainer>
     /// this is the constructor of the class
     /// </summary>
     public class FunctionsContainer
@@ -19,7 +19,7 @@ namespace Excercise_1
             //create new dictionary.
             this.funcDic = new Dictionary<string, Func>();
         }
-        /// <summary>
+        /// <Func>
         /// delegate function family.
         /// </summary>
         /// <param name="functionName"></param> the name of the function
@@ -37,12 +37,12 @@ namespace Excercise_1
             }
             set
             {
-                //give the function tis value.
+                //give the function this value.
                 this.funcDic[functionName] = value;
          
             }
         }
-        /// <summary>
+        /// <getAllMissions>
         /// this will return all of the function names.
         /// </summary>
         /// <returns></returns> a list of the function names.
@@ -51,9 +51,10 @@ namespace Excercise_1
         {
             List<String> missionNames = new List<string>();
             //add the keys of the function to a list.
-            foreach(var item in funcDic.Keys)
+            foreach(var mission in funcDic.Keys)
             {
-                missionNames.Add(item);
+                //add mission name to the mission list
+                missionNames.Add(mission);
             }
             return missionNames;
         }
