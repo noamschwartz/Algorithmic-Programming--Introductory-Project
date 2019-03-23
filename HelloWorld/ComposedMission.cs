@@ -40,9 +40,9 @@ namespace Excercise_1
         public double Calculate(double value)
         {
             //apply the value on all of the functions in the mission.
-            foreach(Func mission in ListOfMissions)
+            foreach(Func singleMission in ListOfMissions)
             {
-                value = mission(value);
+                value = singleMission(value);
             }
          
             if (OnCalculate != null)

@@ -11,7 +11,6 @@ namespace Excercise_1
         public event EventHandler<double> OnCalculate;
         private Func Function;
         public string Name { get; }
-
         public string Type { get; }
 
         /// <Constructor>
